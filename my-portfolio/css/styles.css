@@ -1,0 +1,118 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set base font and background color */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation Links */
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: #ddd;
+}
+/* General Section Styling */
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Intro Section for the Home Page */
+.intro {
+    text-align: center;
+}
+.intro img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-top: 1rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+/* Project Card Layout */
+.project-card {
+    padding: 1.5rem;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Contact Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+form button {
+    padding: 0.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form button:hover {
+    background: #555;
+}
+/* Responsive Layout */
+@media (max-width: 600px) {
+    header nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .intro img {
+        max-width: 100px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+.project-card.expanded {
+    background-color: #f0f8ff;
+    border-color: #007acc;
+}
